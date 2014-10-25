@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1>Picture Page</h1>
+    <picture>
+       <source srcset="mobile.png, mobile-hd.png">
+       <source media="(min-width: 400px)" srcset="tablet.png">
+       <source media="(min-width: 600px)" srcset="tablet.png">
+       <source media="(min-width: 800px)" srcset="tablet.png">
+       <source media="(min-width: 1024px)" srcset="desktop.png">
+       <img src="img/600X600.gif" alt="A photo of London by night">
+    </picture>
+
+</body>
+</html>

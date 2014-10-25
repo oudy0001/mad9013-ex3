@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1>Picture Page</h1>
+<picture>
+   <source media="(min-width: 100px)"
+      srcset="img/340X340.gif  1024w,
+         img/600X600.gif 640w,
+         img/340X340  320w"
+      sizes="33.3w" />
+   <source srcset="img/400X400.gif, img/600X600.gif, img/340X340.gif" />
+   <img src="img/600x600.gif" alt="A rad wolf" />
+</picture>
+    
+    <h1>part 2</h1>
+    <picture>
+   <source media="(min-width: 100px)"
+      srcset="img/400X400.gif  1024w,
+         img/600X600.gif 640w,
+         img/640X640.gif  320w" />
+   <img src="small.jpg" alt="A rad wolf" />
+</picture>
+    <h1>doesnt work apparently</h1>
+    <!--<picture>
+       <source media="(min-width: 400px)" srcset="img/400X400.gif" sizes="400px">
+       <source media="(min-width: 600px)" srcset="img/600X600.gif">
+       <source media="(min-width: 800px)" srcset="img/400X400.gif">
+       <source media="(min-width: 1024px)" srcset="img/340X340.gif">
+       <img src="img/600X600.gif" alt="A photo of London by night">
+    </picture>-->
+
+</body>
+</html>
