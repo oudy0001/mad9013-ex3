@@ -1,0 +1,89 @@
+html{
+    background-color: black;
+}
+.banner{
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/5847/viewport-selection-opt.jpg) no-repeat 50% 50%;
+  text-transform: uppercase;
+  text-align:center;
+  color: #fff;
+  font-size: 2rem;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    height: 300px;
+}
+h1{
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-weight: 700;	
+	padding: 10px 20px;
+    color: #555;
+    text-shadow: 0px 0px 30px #1097FF;
+}
+.wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: black;
+}
+.pic{
+    border-radius: 2%;
+}
+@media all and (max-width: 399px){
+.pic{
+    float: left;
+    margin-bottom: 1%;
+    width: 100%;
+        background-color: red;
+    }
+}
+@media all and (min-width: 400px) and (max-width: 599px){
+.pic{
+    float: left;
+    margin-bottom: 1%;
+    width: 100%;
+    background-color: red;
+}
+}
+@media all and (min-width: 600px) and (max-width: 799px){
+.pic{
+    margin: 0 0 1% 1%;
+    float: left;
+    width: 49.5%;
+    background-color: red;
+}
+picture:nth-child(2n+1) .pic{
+    margin-left: 0;
+}
+picture:nth-child(2n+0) .pic{
+    margin-right: 0;
+}
+}
+@media all and (min-width: 800px) and (max-width: 1024px){
+.pic{
+    margin: 0 0 1% 1%;
+    float: left;
+    width: 49.5%;
+    background-color: #33cc33;
+}
+picture:nth-child(2n+1) .pic{
+    margin-left: 0;
+}
+picture:nth-child(2n+0) .pic{
+    margin-right: 0;
+}
+}
+@media all and (min-width: 1024px){
+.pic{
+    margin: 2.5%;
+    float: left;
+    width: 30%;
+}
+picture:nth-child(3n+1) .pic{
+    margin-left: 0;
+}
+picture:nth-child(3n+3) .pic{
+    margin-right: 0;
+}
+}
